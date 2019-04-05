@@ -1,31 +1,23 @@
 doctype html
 html
   head
-      title What's New in JS by Wes Bos
+      title Just JavaScript
       meta(charset='utf-8')
       script(src='slides.js')
-      link(href='https://fonts.googleapis.com/css?family=Bangers|Open+Sans:400,700' rel='stylesheet' type='text/css')
+      link(href="https://fonts.googleapis.com/css?family=Bevan|Carter+One|Shrikhand" rel="stylesheet")
       link(href='styles.css'  rel='stylesheet' type='text/css')
     body
       section.slides.layout-regular.template-default
-        //- article.first
-        //-   each _,i in Array(31)
-        //-     img(width=10 src="images/#{i}.jpg")
         article.first
-          h1(style="font-size:250px;") What's New<br>In JavaScript?
-          br
-          p
-          p
-          a(href='http://wesbos.com') wesbos.com
-          a(href='http://twitter.com/wesbos') @wesbos
+          h1(style="font-size:250px;") Get Better at JavaSCript
 
         article
-          h1 I&apos;m<br>Wes Bos
+          h1 I&apos;m Wes Bos
           p: br
           p: img(src="images/canada-flag.png")
 
         article
-          h2(style="font-size:60px;") These slides will be available shortly after this talk <br>I&apos;ll tweet the link out.
+          p(style="font-size:60px;") These slides will be available shortly after this talk <br>I&apos;ll tweet the link out.
           img(src='images/Twitter_logo_white.png', width='300' style="margin:100px auto")
 
           h2
@@ -56,201 +48,7 @@ html
           img.high(src="https://pbs.twimg.com/media/DLTTKRoXUAEwuZR.jpg:large")
           a(href='https://syntax.fm') Syntax.fm
         article
-          h1 JavaScript is Always Evolving
-
-        article
-          h1 ES6
-
-        article
-          h1 ES2016 (ES7)
-
-        article
-          h1 ES2017 (ES8)
-
-        article
-          h1.huge New DOM Apis
-
-        article
-          h1 This Talk
-
-        article
-          h1 Reaaaady?
-          p.sub.hl Let's go!
-
-        article.section
-          h1 Promises
-          p.sub Not brand new, but let's do a quick review
-
-        article
-          h2 Promises are an IOU for something that will happen in the future
-
-        article
-          ul.build
-            li AJAX call returning data
-            li Access to a User's webcam
-            li Resizing an image
-
-        article
-          h2 All of these things take time, we simply kick off the process and move along with our lives.
-
-        article
-          h1 But why do we do it this way?
-
-        article
-          h1 JavaScript Waits for no one!
-
-        article
-          h1 Almost Everything Is Asynchronous
-
-        article
-          h2 Let's say we wanted to do a few things:
-          ul.build
-            li Make Coffee
-            li Drink Coffee
-            li Cook Breakfast
-            li Eat Breakfast
-
-        article
-          p Do you need to finish making coffee before you can Start Breakfast?
-          p Would it make sense to wait until coffee is made and consumed before we even start cooking breakfast?
-
-        article
-          p No - we want to start one thing, come back to it once it's finished, and deal with the result accordingly!
-
-        article
-          img.high(src="./images/screenshots/mw8s.png")
-
-        article
-          h2 Most new browser APIs are built on Promises, or Observables
-          p.sub More on Observables in a bit
-
-        article
-          h2 fetch()
-
-        article
-          img.wide(src="./images/screenshots/mvNc.png")
-
-        article
-          h2 Axios
-
-        article
-          img.wide(src="./images/screenshots/mvvk.png")
-
-        article
-          h2 Many, many more
-          p.sub.flat PaymentRequest, getUserMedia(), Web Animation API
-
-        article
-          h1 It's easy to make your own too!
-
-        article
-          img.wide(src="./images/screenshots/mvlO.png")
-
-        article
-          img.high(src="./images/screenshots/mw1Y.gif")
-
-
-        article
-          h1 Christmas Tree Callback Hell
-
-        article
-          img.wide(src="./images/screenshots/mvjp.png")
-
-        article
-          img.high(src="./images/screenshots/mul6.png")
-
-        article
-          h2 we get it<br>Promises are great.
-
-        article.section
-          h1 buuuuuuttt
-
-
-        article.section
-          h1 What's the deal with .then()?
-          p.sub It's still kinda callback-y
-
-        article
-          h2 Any code that needs to come after the promise still needs to be in the final .then() callback :\
-
-        article.section
-          h1 Async + Await
-
-        article.section
-          h2 Async + Await still is promises, but with a really nice syntax
-
-        article
-          img.high(src="./images/screenshots/mul6.png")
-
-        article
-          img.high(src="./images/screenshots/mv6R.png")
-
-        article
-          h1 Let's break it down
-
-        article
-          h1.big JavaScript is almost entirely asynchronous / non-blocking
-
-        article
-          h1 great! - But it's hard to read/write
-
-        article
-          h1 PHP
-          img.wide(src="./images/screenshots/mufS.png")
-
-        article
-          h1 JS
-          img.wide(src="./images/screenshots/mw88.png")
-
-        article
-          .build
-            h2 😕😕😕
-            p The PHP is easier to read
-            p The JS is more performant
-            p I'm not really happy
-
-        article
-          h1 Synchronous looking code, without the wait.
-
-        article
-          h1 How does it work?
-
-        article
-          h1 1. Mark it as Async
-
-        article
-          img.wide(src="./images/screenshots/mvxm.png")
-
-        article
-          h1 2. await inside your async fn
-
-        article
-          img.wide(src="./images/screenshots/mvLf.png")
-
-        article
-         h1 Best of Both Worlds!
-
-        article
-         h1 Another Example
-
-        article
-          h2 Slow...
-          img.wide(src="./images/screenshots/mvHv.png")
-
-        article
-          h2 Why wait for Wes?
-          p.sub Remember, async+await is just promises
-
-        article
-          img.wide(src="./images/screenshots/mvPr.png", alt="")
-
-        article
-          h1 Error Handling
-          p.sub A few options (which we don't have time for)...
-
-        article.section
-          h1 Done with Async+ Await!
-          p.sub Let's see more new stuff!
+          h1 Getting better at JavaSCript
 
         article.section
           h1 Intersection Observer
@@ -309,66 +107,6 @@ html
           img.wide(src="./images/screenshots/mvMC.png")
 
         article.section
-          h1 Payment Request API
-
-        article
-          h2 Every single online store needs to reinvent the checkout form.
-
-        article
-          h2 We're all just trying to do the same thing - collect payment info from the user.
-
-        article
-          h2 The Payment Request is a standardized browser API to collect billing and shipping information from your users.
-
-        article
-          video.high(style="width: auto; height: 100%; min-width: 0;" src="./images/paymentRequest.mp4" controls loop)
-
-        article
-          img.high(src="https://developers.google.com/web/fundamentals/payments/images/state01-receipt-view.png")
-          a(href="https://developers.google.com/web/fundamentals/payments/") [Google Developers]
-
-        article
-          video.high(style="width: auto; height: 100%; min-width: 0;" src="./images/webmart.webm" controls loop)
-
-        article
-          video.high(style="width: auto; height: 100%; min-width: 0;" src="./images/applepay.mp4" controls loop)
-
-        article
-          h2 So, Does the Browser Charge Your Card?
-          p.sub nope!
-
-        article
-          h2 Is it secure?
-          p.sub The same, or more!
-
-        article.section
-          h1 getUserMedia()
-
-        article
-          h2 Not new at all
-
-        article
-          img.high(src="./images/screenshots/mw55.png")
-
-        article
-          h1 BUT
-          p.sub Safari Doesn't give a shit
-
-        article
-          h1 September 2017 / iOS11
-          p.sub playsinline and getUserMedia()
-
-        article
-          video.high(style="width: auto; height: 100%; min-width: 0;" src="./images/gum.mp4" controls loop)
-
-        article
-          h2 Promise Based!
-          img.wide(src="./images/screenshots/mv93.png")
-
-        article
-          img.high(src="./images/screenshots/musk.png")
-
-        article.section
           h1 Resize Observer
           p.sub per-element resize events!
 
@@ -388,31 +126,235 @@ html
           video.high(style="width: auto; height: 100%; min-width: 0;" src="./images/resize-video-player.mp4" controls loop)
 
         article.section
-          h1 WOWOWOWOWOW!
-          p.sub Some cool stuff!
-
-        article.section
-          h1 What About Support?
-
-        article.section
-          h1 <strong>Async + Await</strong> via Babel
-
-        article.section
-          h1 <strong>Resize Observer</strong> Polyfillable, but expensive.
-
-        article.section
-          h1 <strong>Intersection Observer</strong> has an official W3 polyfill
-
-        article.section
-          h1 <strong>Web Payment</strong> is easily polyfillable
-          p.sub or Fallback to checkout form
-
-        article.section
-          h1 <strong>getUserMedia</strong> is everywhere
+          h1 DOM Element Methods
+          p.sub Handy
 
         article
-          h1.big Thanks<br>Folks!
-          a(href="http://twitter.com/wesbos") @wesbos
-          a(href="http://instagram.com/wesbos") Insta @wesbos
-          a(href="http://wesbos.com") WesBos.com
+          h2 .closest()
+          p Finds the closest ancestor that matches the passed selector
+
+        article
+          img.blow(src="http://wes.io/908f777858f5/content")
+        article
+          img.blow(src="http://wes.io/485ae1221e63/content")
+        article
+          img.blow(src="http://wes.io/5e6bc9cbd01c/content")
+        article
+          img.blow(src="http://wes.io/1d14c376fc97/content")
+
+        article
+          img.blow(src="http://wes.io/aa41e877d5e5/content")
+          p Great for Click Outside
+        article
+          img.blow(src="http://wes.io/5bc28ecf0a07/content")
+
+        article
+          h2 .matches()
+          p Does this element match the selector?
+
+        article
+          img.blow(src="http://wes.io/1313804c1424/content")
+
+        article
+          h2 Event Delegation
+          img.blow(src="http://wes.io/3a0159ae934d/content")
+
+        article
+          h2 .contains()
+        article
+          img.blow(src="http://wes.io/b1c404dcb8ef/content")
+
+        article
+          h2 Bling.js
+          p The best 11 lines of code
+
+        article
+          img.blow(src="http://wes.io/a3642690cd9d/content")
+
+        article
+          img.blow(src="http://wes.io/4a9ce525e9dc/content")
+
+        article
+          img.blow(src="http://wes.io/fae1dd0502e1/content")
+
+        article
+          img.blow(src="http://wes.io/d475384aac9c/content")
+        article
+          img.blow(src="http://wes.io/e9cc06f32da9/content")
+
+        article
+          h1.medium Data Massaging
+
+        article
+          h1 Array.from()
+          p Turns an iterable into an array
+
+        article
+          img.blow(src="http://wes.io/461217f57fe5/content")
+        article
+          img.blow(src="http://wes.io/c3e2ef19bbbb/content")
+
+        article
+          img.blow(src="http://wes.io/1cbba7d77613/content")
+
+        article
+          img.blow(src="http://wes.io/3eb6342bfd63/content")
+        article
+          h1 Unique-ify
+        article
+          img.blow(src="http://wes.io/cc0b4155a41d/content")
+
+        article
+          h1 ...spread and ...rest
+
+        article
+          img.blow(src="http://wes.io/32cf0bb19bc5/content")
+
+        article
+          img.blow(src="http://wes.io/be507ee6f918/content")
+
+        article
+          h2 Let's look at some patterns around handling different types of requests
+
+        article
+          h2 Async Flow Control
+
+        article
+          h2 Promises are an IOU for something that will happen in the future
+
+        article
+          h1 They either <code>resolve()</code> or <code>reject()</code>
+
+        article
+          h1 Promise.all()
+          p.sub When all resolve()
+        article
+          p It takes an array of baby promises and makes a Mega promise
+          img(src="http://wes.io/80df42462acf/content")
+          p They run concurrently (at the same time)
+        article
+          h1 Promise.race()
+          p.sub When one resolve() or reject()
+        article
+          img.blow(src="http://wes.io/6ce369ebdaa2/content")
+        article
+          img.blow(src="http://wes.io/1041e02b41f8/content")
+        article
+          h1 Promise.any()
+          p.sub When one resolve() or all reject()
+          p.sub Stage 1
+        article
+          img.blow(src="http://wes.io/4fe8f7a1c5a0/content")
+        article
+          h1 Promise<br>.allSettled()
+          p.sub When all finished - can be mix of resolve() or reject()
+          p.sub Stage 4
+
+        article
+          img.blow(src="http://wes.io/808f42b4c587/content")
+
+        article
+          h1 Error Handling
+          p.sub A few options
+
+
+        //- Option 1
+        article
+          p.sub Option #1
+          h1 Make sure Errors Don't Happen
+          p.sub Why waste dev time on something that should never happen? #ProblemSolved
+
+        //- Option 2
+        article
+          p.sub Option #2
+          h1 Try / Catch
+          p.sub Wrap that sucker in a safety blanket
+
+        article
+          img.wide(src="./images/screenshots/nslE.png")
+
+        //- Option 3
+        article
+          p.sub Option #3
+          h1 Higher Order Function
+          p.sub Async Functions can chain a .catch()
+
+        article
+          p Just Live Your Life
+          img.wide(src="./images/screenshots/nsg8.png")
+
+        article
+          p Create a HOF
+          img.high(src="./images/screenshots/nsi4.png")
+
+        article
+          p Hot Shot Implicit Return (WHAT)
+          img.wide(src="./images/screenshots/nsbK.png")
+
+        article
+          p Create a new function with your HOF
+          img.wide(src="https://wes.io/nsbz/content")
+
+        article
+          h1 Very Handy in Node & Express!
+
+        article
+          img.wide(src="https://wes.io/ntkI/content")
+
+        article
+          img.wide(src="https://wes.io/nuqs/content")
+          p Normally we'd Handle each possible Error with next()
+
+        article
+          img.wide(src="https://wes.io/nunX/content")
+
+        article
+          p 🤔 But that doesn't cover errors we throw, unhandled errors or syntax errors...
+
+        article
+          p We need to catch all errors and pass along to the next middleware function
+
+        article
+          h1 Enter HOF
+
+        article
+          img.wide(src="https://wes.io/nteh/content")
+
+        article
+          p Then we just wrap our routes!
+          img.wide(src="https://wes.io/nuda/content")
+          p Any unhandled error will simply get passed along to next()
+
+        //- Option 4
+        article
+          p.sub Option #4
+          h1 Handle The Error When you Call it
+
+        article
+          img.wide(src="https://wes.io/nyqR/content")
+
+        //- Option 2
+        article
+          p.sub Option #5
+          h2 Node's Unhandled Rejection Event
+          p.sub Node.js will soon exit your process on unhandled rejected promises
+
+        article
+          img.wide(src="https://wes.io/ntqa/content")
+
+        article
+          h1 Some Future Stuff
+          p Not totally a standard yet
+
+        article
+          h1 Web Speech Detection
+          p DEMO TIME
+
+        article
+          h1 Shape Detection
+          p DEMO TIME
+
+        article
+          h1.big Thanks Folks!
       script(src='scripts.js')
+      script(src='custom.js')
