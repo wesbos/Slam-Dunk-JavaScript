@@ -6,18 +6,18 @@ function wait(amount = 0) {
   });
 }
 
-// async function go() {
-//   const slowP = wait(1000);
-//   const fastP = wait(50);
+async function go() {
+  const slowP = wait(1000);
+  const fastP = wait(50);
 
-//   Promise.race([slowP, fastP]).then(fastest => {
-//     console.log(`Fastest is ${fastest}`);
-//   });
+  Promise.race([slowP, fastP]).then(fastest => {
+    console.log(`Fastest is ${fastest}`);
+  });
 
-//   Promise.all([slowP, fastP]).then(fastest => {
-//     console.log(`both: ${fastest}`);
-//   });
-// }
+  Promise.all([slowP, fastP]).then(([slow, fast]) => {
+    console.log(`both: ${slow}, ${fast}`);
+  });
+}
 
 // async function go() {
 //   const first = await Promise.any([wait(50), wait(200)]);
@@ -33,7 +33,7 @@ function wait(amount = 0) {
       fetch(`http://test.com/${user}`)
     );
     // get all the responses, whether they reject or resolve
-    const allResponses = await Promise.allSetted(userPromises);
+    const allResponses = await Promise.allSettled(userPromises);
     // we can filter for both now
     const failures = allResponses.filter(p => p.status === 'rejected');
     console.log(failures);

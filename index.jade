@@ -9,12 +9,12 @@ html
     body
       section.slides.layout-regular.template-default
         article.first
-          h1(style="font-size:250px;") Get Better at JavaSCript
+          h1(style="font-size:250px;") Get Better at JavaScript
 
         article
           h1 I&apos;m Wes Bos
-          p: br
           p: img(src="images/canada-flag.png")
+          p I make web development courses and have a podcast called Syntax
 
         article
           p(style="font-size:60px;") These slides will be available shortly after this talk <br>I&apos;ll tweet the link out.
@@ -23,32 +23,9 @@ html
           h2
             a(href='http://twitter.com/wesbos', target='_blank') @wesbos
 
-        article(style='background:white;')
-          a(href='https://ES6.io/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
-            img.wide(src='https://ES6.io/images/es6-facebook-share.png')
-          a(href='https://ES6.io/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') ES6.io
-
-
-        article(style='background:white;')
-          a(href='https://ReactForBeginners.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
-            img.wide(src='https://reactforbeginners.com/images/facebook-share.png')
-          a(href='https://ReactForBeginners.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') ReactForBeginners.com
-
-        article(style='background:white;')
-          a(href='https://LearnNode.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
-            img.wide(src='https://learnnode.com/images/NODE/node-facebook-share.jpg')
-          a(href='https://LearnNode.com/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') LearnNode.com
-
-        article(style='background:white;')
-          a(href='https://CSSGrid.io/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo')
-            img.wide(src='http://wes.io/qEI9/conte  nt')
-          a(href='https://CSSGrid.io/?utm_source=toolingtalk&utm_medium=link&utm_campaign=talkpromo') CSSGrid.io
-
         article
-          img.high(src="https://pbs.twimg.com/media/DLTTKRoXUAEwuZR.jpg:large")
-          a(href='https://syntax.fm') Syntax.fm
-        article
-          h1 Getting better at JavaSCript
+          h1(style="font-size:250px;") Getting Better at JavaScript
+          p A mix bag of tips and techniques that will make you a better JS developer, regardless of which framework you use
 
         article.section
           h1 Intersection Observer
@@ -88,8 +65,8 @@ html
           h1 How does it work?!
 
         article
-          h2 1. Setup some Options
-          img.wide(src="./images/screenshots/muk4.png")
+          h2 1. Options
+          img(src="./images/screenshots/muk4.png")
 
         article
           h2 2. Create an empty Observer
@@ -127,7 +104,7 @@ html
 
         article.section
           h1 DOM Element Methods
-          p.sub Handy
+          p.sub Handy, even in frameworks!
 
         article
           h2 .closest()
@@ -195,9 +172,6 @@ html
           img.blow(src="http://wes.io/c3e2ef19bbbb/content")
 
         article
-          img.blow(src="http://wes.io/1cbba7d77613/content")
-
-        article
           img.blow(src="http://wes.io/3eb6342bfd63/content")
         article
           h1 Unique-ify
@@ -213,8 +187,6 @@ html
         article
           img.blow(src="http://wes.io/be507ee6f918/content")
 
-        article
-          h2 Let's look at some patterns around handling different types of requests
 
         article
           h2 Async Flow Control
@@ -223,11 +195,20 @@ html
           h2 Promises are an IOU for something that will happen in the future
 
         article
-          h1 They either <code>resolve()</code> or <code>reject()</code>
+          h1 They either resolve() or reject()
+
+        article
+          img.blow(src="http://wes.io/1cbba7d77613/content")
+
+        article
+          h2 Let's look at some patterns around handling different types of requests
+
+
 
         article
           h1 Promise.all()
           p.sub When all resolve()
+          p.sub Short circuits when one reject()s
         article
           p It takes an array of baby promises and makes a Mega promise
           img(src="http://wes.io/80df42462acf/content")
@@ -238,7 +219,7 @@ html
         article
           img.blow(src="http://wes.io/6ce369ebdaa2/content")
         article
-          img.blow(src="http://wes.io/1041e02b41f8/content")
+          img.blow(src="http://wes.io/58e1e7a936d2/content")
         article
           h1 Promise.any()
           p.sub When one resolve() or all reject()
@@ -246,12 +227,13 @@ html
         article
           img.blow(src="http://wes.io/4fe8f7a1c5a0/content")
         article
-          h1 Promise<br>.allSettled()
+          h1 Promise
+          h1 .allSettled()
           p.sub When all finished - can be mix of resolve() or reject()
-          p.sub Stage 4
+          p.sub Stage 3
 
         article
-          img.blow(src="http://wes.io/808f42b4c587/content")
+          img.blow(src="http://wes.io/d79c5d287fc6/content")
 
         article
           h1 Error Handling
@@ -343,6 +325,10 @@ html
           img.wide(src="https://wes.io/ntqa/content")
 
         article
+          h1 Neat!
+          p This is the part of the talk where<br>I check how much time I have left
+
+        article
           h1 Some Future Stuff
           p Not totally a standard yet
 
@@ -352,6 +338,7 @@ html
 
         article
           h1 Shape Detection
+          p Faces, Barcodes and Text
           p DEMO TIME
 
         article
