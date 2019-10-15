@@ -16,17 +16,17 @@ new Intl.DateTimeFormat('fr-CA', { dateStyle: 'long' }).format(now);
 const relative = new Intl.RelativeTimeFormat('en', { style: 'long', numeric: 'auto' });
 
 relative.format(3, 'day'); // in 3 days
-relative.format(7, 'day'); // 17 in 7 days
-relative.format(1, 'day'); // 18 tomorrow
-relative.format(-2, 'day'); // 19 2 days ago
-relative.format(-1, 'day'); // 20 yesterday
-relative.format(100, 'year'); // 21 in 100 years
-relative.format(-1, 'year'); // 22 last year
-relative.format(0, 'year'); // 23 this year
-relative.format(1, 'year'); // 24 next year
-relative.format(-20, 'second'); // 25 20 seconds ago
-relative.format(-1, 'second'); // 26 1 second ago
-relative.format(10, 'second'); // 27 in 10 seconds
+relative.format(7, 'day'); // in 7 days
+relative.format(1, 'day'); // tomorrow
+relative.format(-2, 'day'); // 2 days ago
+relative.format(-1, 'day'); // yesterday
+relative.format(100, 'year'); // in 100 years
+relative.format(-1, 'year'); // last year
+relative.format(0, 'year'); // this year
+relative.format(1, 'year'); // next year
+relative.format(-20, 'second'); // 20 seconds ago
+relative.format(-1, 'second'); // 1 second ago
+relative.format(10, 'second'); // in 10 seconds
 
 var relativeFR = new Intl.RelativeTimeFormat('fr', { style: 'long', numeric: 'auto' });
 
