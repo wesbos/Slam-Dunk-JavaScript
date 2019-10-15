@@ -557,6 +557,9 @@ body {
           box-shadow: 0 0 10px 10px rgba(0,0,0,0.05);
   position: relative;
 }
+.slides > article.nopad {
+  padding: 0;
+}
 h1,
 h2,
 h3,
